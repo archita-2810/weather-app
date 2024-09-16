@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero';
-import WeatherShowcase from './components/weathershowcase';
+import WeatherShowcase from './components/WeatherShowcase';
 
 export default function Home() {
   return (
