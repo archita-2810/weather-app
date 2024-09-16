@@ -1,0 +1,49 @@
+@keyframes gradientAnimation {
+    0% {
+      background-position: -100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+  
+.nav-item {
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        #CAECFF,
+        #CAECFF 50%,
+        #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    color: transparent;
+    background-clip: text;
+    transition: background-position 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-item:before {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background: #CAECFF;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    background-position: 0%;
+}
+
+.nav-item:hover:before {
+    width: 100%;
+}
